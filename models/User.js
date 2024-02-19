@@ -35,6 +35,7 @@ User.init(
     },
   },
   {
+    // hooks needed here for password stuff
     sequelize,
     timestamps: false,
     freezeTableName: true,
