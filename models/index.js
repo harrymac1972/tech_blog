@@ -1,14 +1,29 @@
 
+const Comment = require('./Comment');
+const Post = require('./Post');
+const User = require('./User');
 
-// Associations will go here... Tutor session Tues to get this done on last one
 
-    // User has many Posts
-    // Post has one User
+Comment.belongsTo(Post, {
+    foreignKey: 'post_id',
+});  
+Post.hasMany(Comment, {
+    foreignKey: 'post_id',
+});  
 
-    // Post has many Comments
-    // Comment has one Post
+Comment.belongsTo(User, {
+    foreignKey: 'user_id',
+});
+User.hasMany(Comment, {
+    foreignKey: 'user_id',
+});
 
-    // User has many Comments [on other people's Posts]
-    // Comment has one User
+Post.belongsTo(User, {
+    foreignKey: 'user_id',
+});  
+User.hasMany(Post, {
+    foreignKey: 'user_id',
+});
 
-    
+
+module.exports = { User, Post, Comment };
