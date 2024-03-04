@@ -6,12 +6,10 @@ const { Post, User } = require('../models');
 router.get('/', async (req, res) => {
   try {
     const postObjs = await Post.findAll({
-      include: [
-        {
+      include: [{
           model: User,
           attributes: ['username'],
-        },
-      ],
+      },],
     });
 
     const posts = postObjs.map((post) => post.get({ plain: true }));
