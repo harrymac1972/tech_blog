@@ -1,0 +1,19 @@
+
+<div class="container mt-4 col-md-8">
+  <h1 class="text-light">New Post</h1>
+
+  <!-- new post form -->
+  <form action="/dashboard/new" method="post">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <!-- textarea -->
+    <div class="form-group">
+      <label for="content">Content:</label>
+      <textarea class="form-control" id="content" name="content" required></textarea>
+    </div>
+    <!-- Submit -->
+    <button type="submit" class="btn btn-primary">Create Post</button>
+  </form>
+</div>
