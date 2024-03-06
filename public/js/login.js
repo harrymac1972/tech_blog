@@ -20,22 +20,36 @@ const handleLogin = async (event) => {
   
   // SignUp
   const handleSignup = async (event) => {
-    event.preventDefault();  
+    event.preventDefault();
     const userName = document.querySelector('#signup-name').value.trim();
     const email = document.querySelector('#signup-email').value.trim();
-    const password = document.querySelector('#signup-password').value.trim();  
-    if (userName && email && password) {
+    const password = document.querySelector('#signup-password').value.trim();
+
+    
+  if (username && email && password) {
+    // showLoadingSpinner('signup-spinner'); // Show the spinner
+
+    try {
       const response = await fetch('/api/users', {
         method: 'POST',
-        body: JSON.stringify({ userName, email, password }),
+        body: JSON.stringify({ username, email, password }),
         headers: { 'Content-Type': 'application/json' },
-      });  
+      });
+
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/dashboard');
       } else {
-        alert(response.statusText);
+        const errorMessage = await response.text();
+        // displayErrorMessage(errorMessageElement, errorMessage);
+        console.error('Error during signup:', errorMessage);
       }
+    } catch (error) {
+      console.error('Error during signup:', error);
+      // displayErrorMessage(errorMessageElement, 'An unexpected error occurred.');
+    } finally {
+      // hideLoadingSpinner('signup-spinner'); // Hide the spinner
     }
+  }
   };
   
   // get variables
