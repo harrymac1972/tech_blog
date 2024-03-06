@@ -29,14 +29,14 @@ router.get('/', isAuth, async (req, res) => {
 });
 
 // Render form
-router.get('/new', isAuth, (req, res) => {
+router.get('/new-post', isAuth, (req, res) => {
   res.render('newPost', {
     logged_in: req.session.logged_in,
   });
 });
 
 // Handle new post
-router.post('/new', isAuth, async (req, res) => {
+router.post('/new-post', isAuth, async (req, res) => {
   try {
     const { title, content } = req.body;
     const newPost = await Post.create({
