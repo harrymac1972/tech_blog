@@ -6,22 +6,22 @@ const userObjs = [
   {
     username: 'superman',
     email: 'superman@superman.com',
-    password: 'superman',
+    password: 'password1234',
   },
   {
     username: 'spiderman',
     email: 'spiderman@spiderman.com',
-    password: 'spiderman',
+    password: 'password1234',
   },
   {
     username: 'batman',
     email: 'batman@batman.com',
-    password: 'batman',
+    password: 'password1234',
   },
   {
     username: 'hulk',
     email: 'hulk@hulk.com',
-    password: 'hulk',
+    password: 'password1234',
   },
 ];
 
