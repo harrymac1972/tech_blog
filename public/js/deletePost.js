@@ -1,5 +1,5 @@
 
-    // Delete Post
+// Delete Post
 const handlePostDeletion = async (event) => {
     event.preventDefault();
     const postId = event.target.dataset.postId;  
