@@ -51,7 +51,7 @@ router.post('/new-post', isAuth, async (req, res) => {
 });
 
 // render specific post
-router.get('/edit/:id', withAuth, async (req, res) => {
+router.get('/edit/:id', isAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);
     if (!postData) {
