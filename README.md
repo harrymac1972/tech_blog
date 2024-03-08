@@ -22,7 +22,13 @@ Tech Blog CMS is a platform tailored for developers seeking to publish articles,
 2. Once in your project folder please type "**npm i -y**" for all dependencies.
 
 ## Usage
-____
+Clone the repository to your local machine.
+git clone https://github.com/harrymac1972/tech_blog.git
+Navigate to the project directory.
+cd tech-blog
+Install the required dependencies.
+npm install
+
 
 ## License
 This application is licensed by: [MIT](https://opensource.org/licenses/MIT)
