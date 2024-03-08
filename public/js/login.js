@@ -27,7 +27,6 @@ const handleLogin = async (event) => {
 
     
   if (username && email && password) {
-    // showLoadingSpinner('signup-spinner'); // Show the spinner
 
     try {
       const response = await fetch('/api/users', {
@@ -45,9 +44,6 @@ const handleLogin = async (event) => {
       }
     } catch (error) {
       console.error('Error during signup:', error);
-      // displayErrorMessage(errorMessageElement, 'An unexpected error occurred.');
-    } finally {
-      // hideLoadingSpinner('signup-spinner'); // Hide the spinner
     }
   }
   };
