@@ -3,10 +3,22 @@ h1 {
     color: #eee;
   }
 
+.card {
+  margin: .5em;
+}
+
+.custom-card-body {
+  height: 3em;
+}
+
 #div-login {
   margin: 3em;
 }
 
-.card {
-  margin: .5em;
+#footer {
+  margin-top: 1em;
+}
+
+#footer-div {
+  margin-top: 6em;
 }
