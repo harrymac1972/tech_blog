@@ -18,7 +18,9 @@
             <button type="submit" class="btn btn-primary">Submit Comment</button>
         </form>
       {{else}}
-        <p class="text-dark">Please <a href="/login">log in</a> to leave a comment</p>
+        <div id="div-login">
+          <p class="text-dark">Please <a href="/login">log in</a> to leave a comment</p>
+        </div>
       {{/if}}
         {{!-- comments --}}
       <h2 class="mt-4">Comments</h2>
