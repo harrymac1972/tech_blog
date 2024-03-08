@@ -48,11 +48,11 @@ If you have any questions, please contact:
 ![Screenshot_1](./imgs/sceenshot.png)
 
 ## Demonstration Video
-<a href="____">Employee Tracker Video</a>
+n/a
 
 ## GitHub Link
 <a href="https://github.com/harrymac1972/tech_blog">Tech Blog on Github</a>
 
 
 ## Heroku Link
-n/a
+____
