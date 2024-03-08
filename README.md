@@ -3,7 +3,8 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-____
+
+Tech Blog CMS is a platform tailored for developers seeking to publish articles, blog posts, and express their insights on diverse technical subjects. Adhering to the MVC model, this system is meticulously crafted, employing Handlebars.js for templating, Sequelize as the ORM, and integrating the express-session npm package for authentication. Whether you're an experienced developer or embarking on your journey, this CMS-style blog site offers an avenue for sharing knowledge and fostering learning.
 
 ## Table of Contents
 - [Installation](#installation)
