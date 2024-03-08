@@ -28,7 +28,7 @@
         {{#each comments}}
             <li class="card custom-card-light">
             <p>{{comment_text}}</p>
-            <p class="text-muted">By {{user.username}} on {{format_date this.createdAt}}</p>
+            <p class="text-muted">Posted by {{user.username}} on {{format_date this.createdAt}}</p>
             </li>
         {{/each}}
       </ul>
