@@ -49,3 +49,4 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`App listening on port ${PORT}!`);
     });
 });
+// comment to force heroku commit
