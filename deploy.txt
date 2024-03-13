@@ -1,0 +1,17 @@
+Trouble shooting Heroku with Alexis
+
+express must have been installed globally on my machine
+because the package.json didn't have it!!
+
+I did `npm uninstall -g express` so that doesn't happen again
+
+--
+
+JAWSDB_MARIA_URL was chosen in Heroku->Resources and matched
+in connection.json
+
+--
+
+.env
+    SESSION_SECRET='applePie'
+    ^ also needed to be added below JAWSDB_MARIA_URL in Heroku
