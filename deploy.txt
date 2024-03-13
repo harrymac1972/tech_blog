@@ -13,5 +13,5 @@ in connection.json
 --
 
 .env
-    SESSION_SECRET='applePie'
+    SESSION_SECRET= XXXXXXX
     ^ also needed to be added below JAWSDB_MARIA_URL in Heroku
