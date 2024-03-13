@@ -15,3 +15,11 @@ in connection.json
 .env
     SESSION_SECRET= XXXXXXX
     ^ also needed to be added below JAWSDB_MARIA_URL in Heroku
+
+===========
+
+
+he used 
+    heroku logs -a the_app_name_as_seen_with_git_remote_v
+instead of
+    --tail or whatever
