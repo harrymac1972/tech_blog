@@ -4,7 +4,9 @@
 
 ## Description
 
-Tech Blog CMS is a platform tailored for developers seeking to publish articles, blog posts, and express their insights on diverse technical subjects. Adhering to the MVC model, this system is meticulously crafted, employing Handlebars.js for templating, Sequelize as the ORM, and integrating the express-session npm package for authentication. Whether you're an experienced developer or embarking on your journey, this CMS-style blog site offers an avenue for sharing knowledge and fostering learning.
+The Tech Blog CMS is a specialized platform designed for developers aiming to publish articles, blog posts, and share their expertise on various technical topics. Built around the MVC model, this system utilizes Handlebars.js for templating, Sequelize as the ORM, and incorporating the express-session npm package for authentication.
+
+Note:  CSS is minimal.  May dive deeper in future.  Time is of the essence...
 
 ## Table of Contents
 - [Installation](#installation)
@@ -45,7 +47,7 @@ If you have any questions, please contact:
 -- harrymac1972@gmail.com.
 
 ## Screenshots
-![Screenshot_1](./imgs/sceenshot.png)
+![Screenshot_1](./public/imgs/screen_shot_home.png)
 
 ## Demonstration Video
 n/a
